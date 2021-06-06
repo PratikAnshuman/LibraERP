@@ -1,0 +1,74 @@
+<!-- <form [formGroup]="form" (submit)="submit()">
+    <img class="img-responsive" style="margin: 0 auto;" src="../assets/LibraERP-logos.jpeg" alt="" width="100" height="100">
+
+    <h1 class="h3 mb-3 fw-normal">Please register</h1>
+
+    <div class="form-floating">
+        <input formControlName="name"  type="text" class="form-control" placeholder="User Name">
+      </div>
+    <div class="form-floating">
+      <input formControlName="email" type="email" class="form-control" placeholder="Email">
+    </div>
+    <div class="form-floating">
+      <input formControlName="password" type="password" class="form-control" placeholder="Password">
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+  </form> -->
+
+  <header>
+    <style>
+      #intro {
+       background-color: #b8cfc9;
+        height: 100vh;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+        }
+      }
+    </style>
+
+    <!-- Background image -->
+    <div id="intro" class="shadow-2-strong">
+      <div class="mask d-flex align-items-center h-100">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-md-8">
+              <form class="bg-white  rounded-5 shadow-5-strong p-5" [formGroup]="form" (submit)="submit()">
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input formControlName="email" type="email" id="form1Example1" class="form-control" placeholder="Email"/>
+                </div>
+
+                <!-- Username input -->
+                <div class="form-outline mb-4">
+                  <input formControlName="name" type="text" id="form1Example1" class="form-control" placeholder="Username"/>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input formControlName="password" type="password" id="form1Example2" class="form-control" placeholder="Password"/>
+                </div>
+
+                <!-- 2 column grid layout for inline styling -->
+                <div class="row mb-4">
+                  <div class="col text-center">
+                    <!-- Simple link -->
+                    <a href="#!">Forgot password?</a>
+                  </div>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->

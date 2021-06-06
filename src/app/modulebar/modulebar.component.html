@@ -1,0 +1,14 @@
+<!-- <mdb-badge [pill]=true [default]=true>Default</mdb-badge> -->
+<div *ngIf="authenticated" class="text-center">
+    <a routerLink='/company'><button type="button" class="btn btn-dark cyan btn-circle btn-xl shadow-none"><mdb-icon fas icon="cogs" size="2x"></mdb-icon><br/>System</button></a>
+    <button type="button" class="btn btn-dark cyan btn-circle btn-xl shadow-none"><mdb-icon fas icon="tools" size="2x"></mdb-icon><br/>Master</button>
+    <button type="button" class="btn btn-dark cyan btn-circle btn-xl shadow-none"><mdb-icon fas icon="book-open" size="2x"></mdb-icon><br/>General<br/>Ledger</button>
+    <button type="button" class="btn btn-dark cyan btn-circle btn-xl shadow-none"><mdb-icon far icon="money-bill-alt" size="2x"></mdb-icon><br/>Sale</button>
+    <button type="button" class="btn btn-dark cyan btn-circle btn-xl shadow-none"><mdb-icon fas icon="shopping-cart" size="2x"></mdb-icon><br/>Purchase</button>
+    <button type="button" class="btn btn-dark cyan btn-circle btn-xl shadow-none"><mdb-icon fas icon="industry" size="2x"></mdb-icon><br/>Manufacturing</button>
+    <button type="button" class="btn btn-dark cyan btn-circle btn-xl shadow-none"><mdb-icon far icon="handshake" size="2x"></mdb-icon><br/>CRM</button>
+    <button type="button" class="btn btn-dark cyan btn-circle btn-xl shadow-none"><mdb-icon far icon="chart-bar" size="2x"></mdb-icon><br/>Report</button>
+    <button type="button" class="btn btn-dark cyan btn-circle btn-xl shadow-none"><mdb-icon fas icon="chart-line" size="2x"></mdb-icon><br/>Dashboard</button>
+    <a routerLink='/todo'><button type="button" class="btn btn-dark cyan btn-circle btn-xl shadow-none"><mdb-icon far icon="list-alt"size="2x"></mdb-icon><br/>To-Do</button></a>
+  </div>
+  <router-outlet></router-outlet>
